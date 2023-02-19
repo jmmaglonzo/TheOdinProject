@@ -35,204 +35,83 @@ a {
   color: inherit;
 }
 
-/* ************ */
-/* nav-section */
-/* ************ */
-.navigation {
+/* ########## */
+/* Navigation */
+/* ########## */
+
+.main {
+  background-color: var(--hero-footer);
+}
+
+.main-nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--hero-footer);
-  padding: 1.8rem;
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 2rem;
+  color: var(--main-text);
 }
 
-.logo h1 {
-  font-size: 2.4rem;
-  color: var(--hero-logo);
-}
-
-.navigation-links {
+.nav-links {
   display: flex;
-  gap: 2.4rem;
-  font-size: 1.8rem;
-  color: var(--link-second-header-quote-bg);
-  font-weight: 600;
+  gap: 2rem;
+  align-items: center;
 }
 
-/* ************ */
-/* Hero-section */
-/* ************ */
+.odin-logo {
+  font-size: 2.8rem;
+}
+.nav-links li a {
+  font-size: 2rem;
+  font-weight: 500;
+}
 
-.hero-section {
+.btn {
+  font-size: 1.5rem;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  font-weight: 600;
+  color: var(--main-text);
+  background-color: var(--button-call-to-action);
+}
+
+/* ########## */
+/* Hero */
+/* ########## */
+
+.hero {
   background-color: var(--hero-footer);
   height: 100vh;
 }
 
-.container {
-  max-width: 120rem;
+.hero-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2.4rem;
-  margin: 0 auto;
-  padding: 4.8rem;
+  max-width: 140rem;
+  margin: auto;
+  gap: 9.6rem;
   align-items: center;
+  padding: 5rem 9.6rem 0 9.6rem;
 }
 
-.picture {
+.hero-img img {
   width: 100%;
 }
 
-.hero-text h1 {
-  font-size: 4.8rem;
-  color: var(--main-text);
+.hero-content h1 {
+  font-size: 6.2rem;
+  line-height: 1.1;
   font-weight: 800;
-  margin-bottom: 2.4rem;
-  line-height: 1;
-}
-
-.hero-text p {
-  font-size: 2rem;
   color: var(--main-text);
-  line-height: 1, 6;
-  margin-bottom: 2.4rem;
+  margin-bottom: 3.2rem;
+  letter-spacing: -2px;
 }
 
-.btn {
-  border: none;
-  border-radius: 20px;
-  background-color: var(--button-call-to-action);
-  color: var(--main-text);
-  font-weight: 600;
-  font-size: 1.8rem;
-  padding: 1rem 3rem;
-}
-
-/* ************ */
-/* random-section */
-/* ************ */
-
-.random-container {
-  max-width: 80rem;
-  margin: 0 auto;
-  padding: 5rem;
-}
-
-.random-container h1 {
-  font-size: 3.6rem;
-  color: var(--information-quote-text);
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.boxes {
-  border: 3px solid var(--button-call-to-action);
-  height: 15rem;
-  width: 15rem;
-  border-radius: 10px;
-}
-
-.random-boxes {
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 5rem;
-}
-
-.random {
-  width: 100%;
-  height: 100%;
-  object-fit: fill;
-  border-radius: 10px;
-}
-
-.boxes-text p {
-  text-align: center;
-  font-size: 1.2rem;
-  color: var(--information-quote-text);
-  margin-top: 1rem;
-}
-
-/* ************ */
-/* quote-section */
-/* ************ */
-
-.quotes {
-  max-width: 80rem;
-  background-color: var(--link-second-header-quote-bg);
-  margin: 5rem auto;
-}
-
-.quotes-container {
-  padding: 10rem;
-}
-
-blockquote {
-  font-size: 3rem;
-  color: var(--information-quote-text);
-  font-style: italic;
-}
-
-.quotes-container p {
+.hero-content p {
   font-size: 2rem;
-  margin-top: 2rem;
-  text-align: right;
-  font-style: italic;
-  color: var(--information-quote-text);
-}
-
-/* ************ */
-/* action-section */
-/* ************ */
-
-.call-to-action {
-  max-width: 80rem;
-  background-color: var(--button-call-to-action);
-  margin: 0 auto;
-  border-radius: 5px;
-  padding: 2.5rem;
-  margin-bottom: 4rem;
-}
-
-.action-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.action-text h1 {
-  font-size: 1.5rem;
-  color: #fff;
-}
-
-.action-text p {
-  font-size: 1rem;
-  color: #fff;
-  margin-top: 1rem;
-}
-
-.btn1 {
-  font-size: 1rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #fff;
-  border: 2px solid #fff;
-  background-color: var(--button-call-to-action);
-  padding: 1rem 4rem;
-  border-radius: 10px;
-}
-
-/* footer*/
-
-footer {
-  background-color: var(--hero-footer);
+  line-height: 1.6;
   color: var(--main-text);
-  height: 10rem;
-}
-
-footer p {
-  font-size: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  padding: 4rem;
+  margin-bottom: 3.2rem;
 }
