@@ -49,7 +49,7 @@ a {
   justify-content: space-between;
   max-width: 120rem;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 4rem;
   color: var(--main-text);
 }
 
@@ -98,6 +98,7 @@ a {
 
 .hero-img img {
   width: 100%;
+  border-radius: 5px;
 }
 
 .hero-content h1 {
@@ -114,4 +115,50 @@ a {
   line-height: 1.6;
   color: var(--main-text);
   margin-bottom: 3.2rem;
+}
+
+/* ########## */
+/* Random-Section */
+/* ########## */
+.random-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4.6rem;
+  padding: 9.6rem;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.box {
+  width: 20rem;
+  height: 20rem;
+  border: 4px solid var(--button-call-to-action);
+  border-radius: 5px;
+}
+
+.box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.random-text p {
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--information-quote-text);
+  text-align: center;
+  line-height: 1.4;
+  margin-top: 1rem;
+}
+
+.random-heading h1 {
+  text-align: center;
+  font-size: 4.6rem;
+  text-transform: uppercase;
+  color: var(--information-quote-text);
+}
+
+.random-heading {
+  margin-top: 4.6rem;
 }
